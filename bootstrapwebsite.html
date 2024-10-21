@@ -1,0 +1,1993 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="./bootstrap.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+    integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+    integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<style>
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar {
+    width: 100%;
+    background-color: #37517e;
+
+    * {
+        color: white;
+    }
+
+    #button {
+        border-radius: 15px;
+    }
+}
+
+#home {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #37517e;
+
+    #home1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+
+        #h1 {
+            font-size: 50px;
+            padding: 0px 70px;
+            color: white;
+        }
+
+        #h {
+            font-size: 25px;
+            padding: 0px 70px;
+            color: silver;
+        }
+
+        #h2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            padding: 50px;
+
+            #b1 {
+                border-radius: 25px;
+                background-color: aqua;
+                color: white;
+                border: none;
+                padding: 10px 45px;
+                font-size: 20px;
+            }
+
+            #b2 {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+
+                #b3 {
+                    font-size: 40px;
+                    color: white;
+                }
+
+                #i2 {
+                    color: white;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+#im1 {
+    height: 550px;
+    width: 550px;
+    animation-name: pic;
+    transform-style: preserve-3d;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes pic {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.slick-slide {
+    margin: 30px 35px;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+
+    #a {
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 25px;
+        color: #37517e;
+        border-bottom: 2px gray solid;
+    }
+
+    #a::after {
+        content: "";
+        border: 1px skyblue solid;
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    #about1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+
+        #about2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            gap: 10px;
+
+            #a1 {
+                font-size: 18px;
+                color: black;
+            }
+
+            #a2 {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+
+                #one {
+                    font-size: 18px;
+                    color: black;
+                }
+
+                #one1 {
+                    font-size: 18px;
+                    color: black;
+                }
+            }
+        }
+
+        #about3 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            gap: 30px;
+            width: 75%;
+
+            #two {
+                color: black;
+                font-size: 18px;
+            }
+
+            #three {
+                border: 5px skyblue solid;
+                font-size: 18px;
+                background-color: white;
+                color: skyblue;
+            }
+
+            #three:hover {
+                background-color: skyblue;
+            }
+        }
+    }
+}
+
+#f4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 50px;
+    gap: 40px;
+    background-color: rgba(239, 232, 232, 0.299);
+
+    #ff {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        gap: 20px;
+
+        #ff1 {
+            font-size: 30px;
+            color: #37517e;
+        }
+
+        #ff2 {
+            font-size: 17px;
+            color: silver;
+        }
+
+        .accordion {
+            .accordion-item {
+                margin-bottom: 30px;
+
+                .accordion-header {
+                    margin-bottom: 0px;
+                    padding-bottom: 0px;
+
+                    button {
+                        border: none;
+                        box-shadow: none;
+                        background: none;
+                        outline: none;
+                    }
+
+                    button:hover {
+                        color: skyblue;
+                    }
+
+                    button:not(.collapsed) {
+                        color: skyblue;
+                    }
+                }
+
+                .accordion-collapse {
+                    margin-top: 0px;
+                    padding-bottom: 0px;
+                }
+            }
+        }
+    }
+}
+
+#ff3 {
+    width: 600px;
+    height: 400px;
+}
+
+#ff4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    gap: 50px;
+
+    #f5 {
+        height: 300px;
+        width: 500px;
+    }
+
+    #f6 {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        #f11 {
+            color: #37517e;
+            font-size: 28px;
+        }
+
+        #f12 {
+            color: silver;
+            font-size: 15px;
+        }
+
+        #f {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        #f8 {
+            font-size: 15px;
+            color: black;
+        }
+
+        #f9 {
+            color: black
+        }
+
+        .progress {
+            height: 8px;
+            border-radius: 0px;
+            margin-bottom: 20px;
+
+            .progress-bar {
+                background-color: #37517e;
+            }
+        }
+    }
+}
+
+#services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: silver;
+    transform-style: preserve-3d;
+
+    #s1 {
+        color: #37517e;
+        font-size: 35px;
+        border-bottom: 2px gray solid;
+    }
+
+    #s1::after {
+        content: "";
+        border: 1px skyblue solid;
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    #s2 {
+        color: rgb(126, 123, 123);
+        font-size: 18px;
+    }
+
+    #s3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 60px;
+
+        #s4 {
+            background-color: white;
+            margin-left: 30px;
+            padding: 70px 30px;
+
+            #ss1 {
+                color: #37517e;
+                font-size: 40px;
+            }
+
+            #ss1:hover {
+                color: skyblue;
+            }
+
+            #ss2 {
+                color: #37517e;
+                font-size: 20px;
+            }
+
+            #ss2:hover {
+                color: skyblue;
+            }
+
+            #ss3 {
+                color: silver;
+                font-size: 15px;
+
+            }
+        }
+
+        #s4:hover {
+            transform: translateY(-10px);
+        }
+    }
+}
+
+#call {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 70px;
+    gap: 50px;
+    background-image: url("https://bootstrapmade.com/content/demo/Arsha/assets/img/cta-bg.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    #call1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+
+        #c1 {
+            color: white;
+            font-size: 25px;
+        }
+
+        #c2 {
+            color: white;
+            font-size: 18px;
+        }
+    }
+
+    #c3 {
+        font-size: 15px;
+        padding: 10px 40px;
+        border-radius: 40px;
+        border: 2px white solid;
+    }
+
+    #c3:hover {
+        background-color: skyblue;
+        border: none;
+    }
+}
+
+#port {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 50px;
+
+    #p1 {
+        font-size: 30px;
+        color: #37517e;
+        border-bottom: 2px gray solid;
+    }
+
+    #p1::after {
+        content: "";
+        border: 1px skyblue solid;
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    #p2 {
+        font-size: 20px;
+        color: silver;
+    }
+
+    #p3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        #p4 {
+            border-radius: 40px;
+            padding: 3px 10px;
+            color: black;
+        }
+
+        #p4:hover {
+            background-color: skyblue;
+        }
+    }
+
+    #p5 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        padding: 50px;
+
+        #p7 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+    }
+}
+
+#team {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+
+    #t1 {
+        font-size: 30px;
+        color: #37517e;
+        border-bottom: 2px gray solid;
+    }
+
+    #t1::after {
+        content: "";
+        border: 1px skyblue solid;
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    #t2 {
+        color: silver;
+        font-size: 20px;
+    }
+
+    #t3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 50px;
+
+        #tt1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background-color: whitesmoke;
+            margin-right: 30px;
+            margin-bottom: 30px;
+            padding: 30px 30px;
+            gap: 25px;
+
+            #tt2 {
+                border-radius: 50%;
+                height: 130px;
+                width: 130px;
+            }
+
+            #t4 {
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: start;
+
+                #tt3 {
+                    font-size: 20px;
+                    color: #37517e;
+                }
+
+                #tt4 {
+                    font-size: 18px;
+                    color: black;
+                }
+
+                #tt5 {
+                    font-size: 15px;
+                    color: black;
+                }
+
+                #t5 {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 15px;
+
+                    #tt6 {
+                        color: silver;
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+
+        #tt1:hover {
+            transform: translateY(-10px);
+        }
+    }
+}
+
+#pricing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: silver;
+    width: 100%;
+    padding: 50px;
+
+    #p1 {
+        font-size: 30px;
+        color: #37517e;
+        border-bottom: 2px gray solid;
+    }
+
+    #p1::after {
+        content: "";
+        border: 1px skyblue solid;
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    #p2 {
+        font-size: 15px;
+        color: silver;
+    }
+
+    #p {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        #pp1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+            gap: 20px;
+            background-color: white;
+            margin-right: 30px;
+            padding: 50px;
+
+            #p3 {
+                font-size: 20px;
+                color: #37517e;
+            }
+
+            #pp {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+
+                #p4 {
+                    font-size: 50px;
+                    color: skyblue;
+                }
+
+                #p11 {
+                    font-size: 20px;
+                    color: silver;
+                }
+            }
+
+            #p5 {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+
+                #p12 {
+                    color: green;
+                }
+            }
+
+            #p7 {
+                background-color: skyblue;
+                border-radius: 50px;
+                padding: 10px 30px;
+            }
+
+            #p6 {
+                border-radius: 50px;
+                color: skyblue;
+                padding: 10px 30px;
+            }
+
+            #p6:hover {
+                background-color: skyblue;
+            }
+        }
+    }
+}
+
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+
+    h2 {
+        color: rgb(96, 53, 136);
+        border-bottom: 1px grey solid;
+        gap: 10px;
+        font-weight: bold;
+    }
+
+    h2::after {
+        content: "";
+        border: 2px skyblue solid;
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+        gap: 5px;
+    }
+
+    p {
+        font-size: 20px;
+        color: gray;
+    }
+
+    #carouselExampleAutoplaying {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 40px auto;
+
+        .carousel-inner {
+            .carousel-item {
+
+                /* display: flex;
+                align-items: center; */
+                img {
+                    height: 100px;
+                    width: 100px;
+                    border-radius: 50%;
+                }
+
+                #im-head {
+                    color: rgb(84, 84, 118);
+                    font-weight: bold;
+                    font-size: 25px;
+                }
+
+                #im-head {
+                    color: rgb(84, 84, 118);
+                    font-weight: bold;
+                    font-size: 25px;
+                }
+
+                #im-head1 {
+                    color: grey;
+                    font-weight: 500;
+                }
+
+                #im-text {
+                    display: flex;
+                    align-items: center;
+                    color: grey;
+                    font-size: 20px;
+                    width: 80%;
+                    padding-left: 200px;
+
+                    #cama {
+                        font-size: 40px;
+                        color: #47b2e4;
+
+                    }
+                }
+            }
+
+        }
+
+    }
+}
+
+#ask {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 90px;
+    gap: 30px;
+    background-color: rgba(169, 163, 163, 0.215);
+
+    #a1 {
+        font-size: 30px;
+        color: #37517e;
+        border-bottom: 2px rgba(128, 128, 128, 0.274) solid;
+    }
+
+    #a1::after {
+        content: "";
+        border: 1px skyblue solid;
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    #a2 {
+        font-size: 15px;
+        color: rgb(120, 120, 120);
+    }
+
+    .accordion {
+        .accordion-item {
+            margin-bottom: 30px;
+
+            .accordion-header {
+                margin-bottom: 0px;
+                padding-bottom: 0px;
+
+                button {
+                    border: none;
+                    box-shadow: none;
+                    background: none;
+                    outline: none;
+                }
+
+                button:hover {
+                    color: skyblue;
+                }
+
+                button:not(.collapsed) {
+                    color: skyblue;
+                }
+            }
+
+            .accordion-collapse {
+                margin-top: 0px;
+                padding-bottom: 0px;
+            }
+        }
+    }
+
+}
+#contac {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 50px;
+    gap: 30px;
+    background-color: rgba(239, 235, 235, 0.635);
+    width: 100%;
+
+    #c1 {
+        font-size: 30px;
+        color: #37517e;
+        border-bottom: 2px gray solid;
+    }
+
+    #c1::after {
+        content: "";
+        border: 1px skyblue solid;
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    #c2 {
+        font-size: 20px;
+        color: rgb(98, 96, 96);
+    }
+
+    #c3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        #cc1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+            gap: 20px;
+            background-color: white;
+            margin-right: 30px;
+            padding: 30px 50px;
+            border-top: 5px skyblue solid;
+            border-bottom: 5px skyblue solid;
+
+            #c4 {
+                display: flex;
+                flex-direction: row;
+                justify-content: start;
+                align-items: start;
+                gap: 10px;
+
+                #c5 {
+                    font-size: 30px;
+                    border-radius: 50%;
+                    padding: 10px;
+                    color: skyblue;
+                }
+
+                #c5:hover {
+                    background-color: skyblue;
+                }
+
+                #c6 {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: start;
+                    align-items: start;
+                }
+            }
+
+            #c9 {
+                height: 250px;
+                width: 300px;
+            }
+        }
+
+        #cc2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+            background-color: white;
+            padding: 30px 50px;
+            gap: 20px;
+            border-top: 5px skyblue solid;
+            border-bottom: 5px skyblue solid;
+
+            #field {
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: start;
+            }
+
+            #cc3 {
+                display: flex;
+                flex-direction: row;
+                justify-content: start;
+                align-items: start;
+                gap: 30px;
+
+                #field {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: start;
+                    align-items: start;
+                    gap: 20px;
+
+                    #name1 {
+                        padding: 10px 20px;
+                    }
+                }
+            }
+
+            #field {
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: start;
+                gap: 20px;
+
+                #name2 {
+                    padding: 10px 150px;
+                }
+            }
+
+            #field {
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: start;
+                gap: 20px;
+
+                #name3 {
+                    padding: 70px 150px;
+                }
+            }
+
+            #cc6 {
+                border-radius: 50px;
+                background-color: skyblue;
+                padding: 10px 20px;
+            }
+        }
+    }
+}
+
+#join {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 0px;
+    background-color: rgba(222, 215, 215, 0.479);
+    width: 100%;
+
+    #j1 {
+        color: #37517e;
+        font-size: 30px;
+    }
+
+    #j2 {
+        color: rgb(123, 121, 121);
+        font-size: 15px;
+    }
+
+    #j3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        #jj1 {
+            border-radius: 50px;
+            border: 3px skyblue solid;
+            padding: 10px 200px;
+        }
+
+        #jj2 {
+            border-radius: 50px;
+            background-color: skyblue;
+            border: 3px skyblue solid;
+            padding: 10px 20px;
+        }
+    }
+}
+
+#arsha {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    gap: 50px;
+
+    #r1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        gap: 10px;
+
+        #r2 {
+            color: #37517e;
+        }
+    }
+
+    #rr1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        gap: 10px;
+
+        #rr2{
+            color: #37517e;
+        }
+
+        #rr3 *{
+            color: #37517e;
+            text-decoration: none;
+        }
+    }
+
+    #r7 {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        gap: 10px;
+
+        #r8 {
+            color: #37517e;
+        }
+
+        #r9 {
+            font-size: 15px;
+        }
+
+        #r10 {
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            align-items: start;
+
+            #rr6 {
+                font-size: 30px;
+                color: silver;
+                border-radius: 50%;
+                padding: 10px;
+            }
+
+            #rr6:hover {
+                background-color: skyblue;
+            }
+        }
+    }
+}
+
+#last {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+
+    #l1 {
+        font-size: 15px;
+    }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+#about {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+@keyframes head {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+#f4 {
+    animation: head linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+/* @keyframes body {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+#ff4 {
+    animation: body linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+} */
+@keyframes filling{
+    from {
+        opacity: 0;
+        clip-path: inset(0 100% 0 0);
+    }
+
+    to {
+        opacity: 1;
+        clip-path: inset(0 0 0 0);
+    }    
+}
+.progress {
+    animation: filling linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+@keyframes hand {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+#services {
+    animation: hand linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+@keyframes part {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+#call1 {
+    animation: part linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+@keyframes party {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+#port {
+    animation: party linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+@keyframes partys {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+#team {
+    animation: partys linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+@keyframes price {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+#pricing {
+    animation: price linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+@keyframes testy {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+#testimonials {
+    animation: testy linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+@keyframes tests {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+#ask {
+    animation: tests linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+@keyframes con{
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+#contac {
+    animation: con linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+</style>
+<body>
+  <nav class="navbar navbar-expand-lg" id="navbar">
+    <a class="navbar-brand ms-5" href="#">MOUNIKA</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav flex-grow-1 justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link active ms-2" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link ms-2" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link ms-2" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active ms-2" href="#">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active ms-2" href="#">Team</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active ms-2" href="#">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active ms-2" href="#">Dropdown</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active ms-2" href="#">Contact</a>
+        </li>
+      </ul>
+      <button class="btn  btn-info text-light type=button mx-5 " id="button">get search</button>
+    </div>
+  </nav>
+  <div id="home">
+    <div id="home1">
+      <div id="h1"><b>Better Solutions For Your Business</b></div>
+      <div id="h">We are team of talented designers making websites with Bootstrap</div>
+      <div id="h2">
+        <button type="button" id="b1">Get Started</button>
+        <div id="b2">
+          <div id="b3"><i class="fa-regular fa-circle-play"></i></div>
+          <a id="i2" href="https://www.youtube.com/watch?v=Y7f98aduVJ8">Whach Video</a>
+        </div>
+      </div>
+    </div>
+    <img id="im1" src="https://bootstrapmade.com/content/demo/Arsha/assets/img/hero-img.png" alt="">
+  </div>
+  <div class="logo slider container">
+    <img class="slide" src="https://bootstrapmade.com/content/demo/Arsha/assets/img/clients/client-1.png" alt="">
+    <img class="slide" src="https://bootstrapmade.com/content/demo/Arsha/assets/img/clients/client-2.png" alt="">
+    <img class="slide" src="https://bootstrapmade.com/content/demo/Arsha/assets/img/clients/client-4.png" alt="">
+    <img class="slide" src="https://bootstrapmade.com/content/demo/Arsha/assets/img/clients/client-5.png" alt="">
+    <img class="slide" src="https://bootstrapmade.com/content/demo/Arsha/assets/img/clients/client-6.png" alt="">
+    <img class="slide" src="https://bootstrapmade.com/content/demo/Arsha/assets/img/clients/client-7.png" alt="">
+    <img class="slide" src="https://bootstrapmade.com/content/demo/Arsha/assets/img/clients/client-8.png" alt="">
+  </div>
+  <div id="about">
+    <div id="a"><b>About Us</b></div>
+    <div id="about1">
+      <div id="about2">
+        <div class="" id="a1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua.</div>
+        <div id="a2">
+          <div class="" id="one"><i class="fa-solid fa-check"></i></div>
+          <div id="one1">Ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+        </div>
+        <div id="a2">
+          <div id="one"><i class="fa-solid fa-check"></i></div>
+          <div id="one1">Duis aute irure dolor in reprehenderit in voluptate velit.</div>
+        </div>
+        <div id="a2">
+          <div id="one"><i class="fa-solid fa-check"></i></div>
+          <div id="one1">Ullamco laboris nisi ut aliquip ex ea commodo</div>
+        </div>
+      </div>
+      <div id="about3">
+        <div id="two">Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+          voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+        <button type="button" id="three"><a id="4" href="#navbar">Read More--></a></button>
+      </div>
+    </div>
+  </div>
+  <div id="f4">
+    <div id="ff">
+      <div id="ff1">Eum ipsam laborum deleniti<b> velit pariatur architecto aut nihil</b></div>
+      <div id="ff2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+        et dolore magna aliqua. Duis aute irure dolor in reprehenderit</div>
+      <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseOne">
+              01 Non consectetur a erat nam at lectus urna duis?
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+              Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida.
+              Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseTwo">
+              02 Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec
+              ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit
+              ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseThree">
+              03 Dolor sit amet consectetur adipiscing elit pellentesque?
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum
+              integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt.
+              Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img id="ff3" src="https://bootstrapmade.com/content/demo/Arsha/assets/img/why-us.png" alt="" height="500px"
+      width="500px">
+  </div>
+  <div id="ff4" class="container-fluid">
+    <img id="f5" src="https://bootstrapmade.com/content/demo/Arsha/assets/img/skills.png" alt="">
+    <div id="f6" class="col-lg-5">
+      <div id="f11"><b>Voluptatem dignissimos provident quasi corporis voluptas</b></div>
+      <div id="f12">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+        et dolore magna aliqua.</div>
+      <div id="f7">
+        <div id="f">
+          <div id="f8">HTML</div>
+          <div id="f9">100%</div>
+        </div>
+        <div class="progress" role="progressbar">
+          <div class="progress-bar" style="width: 100%"></div>
+        </div>
+      </div>
+      <div id="f7">
+        <div id="f">
+          <div id="f8">CSS</div>
+          <div id="f9">90%</div>
+        </div>
+        <div class="progress" role="progressbar">
+          <div class="progress-bar" style="width: 90%"></div>
+        </div>
+      </div>
+      <div id="f7">
+        <div id="f">
+          <div id="f8">JAVASCRIPT</div>
+          <div id="f9">75%</div>
+        </div>
+        <div class="progress" role="progressbar">
+          <div class="progress-bar" style="width: 75%"></div>
+        </div>
+      </div>
+      <div id="f7">
+        <div id="f">
+          <div id="f8">PHOTOSHOP</div>
+          <div id="f9">55%</div>
+        </div>
+        <div class="progress" role="progressbar">
+          <div class="progress-bar" style="width: 55%"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="services">
+    <div id="s1">Services</div>
+    <div id="s2">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</div>
+    <div id="s3">
+      <div id="s4">
+        <div id="ss1"><i class="fa-sharp fa-regular fa-wave-pulse"></i></div>
+        <div id="ss2"><b>Lerom Ipsum</b></div>
+        <div id="ss3">Voluptatum deleniti atque corrupti quos dolores et quas molestion excepturi</div>
+      </div>
+      <div id="s4">
+        <div id="ss1"><i class="fa-sharp fa-regular fa-square"></i></i></div>
+        <div id="ss2"><b>Sed ut perspici</b></div>
+        <div id="ss3">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</div>
+      </div>
+      <div id="s4">
+        <div id="ss1"><i class="fa-regular fa-calendar-days"></i></div>
+        <div id="ss2"><b>Magni Dolores</b></div>
+        <div id="ss3">Excepteur sint occaecat cupidatat non proident, sunt in clupa qui officia</div>
+      </div>
+      <div id="s4">
+        <div id="ss1"><i class="fa-sharp fa-solid fa-signal-stream"></i></div>
+        <div id="ss2"><b>Nemo Enim</b></div>
+        <div id="ss3">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</div>
+      </div>
+    </div>
+  </div>
+  <div id="call">
+    <div id="call1">
+      <div id="c1"><b>Call To Action</b></div>
+      <div id="c2">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum.</div>
+    </div>
+    <button type="button" id="c3"><a id="c4" href="#navbar">CallToAction</a></button>
+  </div>
+  <div id="port">
+    <div id="p1"><b>PORTFOLIO</b></div>
+    <div id="p2">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</div>
+    <div id="p3">
+      <button type="button" id="p4">All</button>
+      <button type="button" id="p4">App</button>
+      <button type="button" id="p4">Card</button>
+      <button type="button" id="p4">Web</button>
+    </div>
+    <div id="p5">
+      <div id="p7">
+        <img src="https://bootstrapmade.com/content/demo/Arsha/assets/img/masonry-portfolio/masonry-portfolio-1.jpg"
+          height="600px" width="300px" alt="">
+        <img src="https://bootstrapmade.com/content/demo/Arsha/assets/img/masonry-portfolio/masonry-portfolio-6.jpg"
+          height="300px" width="300px" alt="">
+      </div>
+      <div id="p7">
+        <img src="https://bootstrapmade.com/content/demo/Arsha/assets/img/masonry-portfolio/masonry-portfolio-2.jpg"
+          height="200px" width="300px" alt="">
+        <img src="https://bootstrapmade.com/content/demo/Arsha/assets/img/masonry-portfolio/masonry-portfolio-5.jpg"
+          height="300px" width="300px" alt="">
+        <img src="https://bootstrapmade.com/content/demo/Arsha/assets/img/masonry-portfolio/masonry-portfolio-9.jpg"
+          height="400px" width="300px" alt="">
+      </div>
+      <div id="p7">
+        <img src="https://bootstrapmade.com/content/demo/Arsha/assets/img/masonry-portfolio/masonry-portfolio-3.jpg"
+          height="250px" width="300px" alt="">
+        <img src="https://bootstrapmade.com/content/demo/Arsha/assets/img/masonry-portfolio/masonry-portfolio-4.jpg"
+          height="200px" width="300px" alt="">
+        <img src="https://bootstrapmade.com/content/demo/Arsha/assets/img/masonry-portfolio/masonry-portfolio-7.jpg"
+          height="200px" width="300px" alt="">
+        <img src="https://bootstrapmade.com/content/demo/Arsha/assets/img/masonry-portfolio/masonry-portfolio-8.jpg"
+          height="200px" width="300px" alt="">
+      </div>
+    </div>
+  </div>
+  <div id="team">
+    <div id="t1">TEAM</div>
+    <div id="t2">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</div>
+    <div id="t3">
+      <div id="tt1">
+        <img id="tt2" src="https://bootstrapmade.com/content/demo/Arsha/assets/img/team/team-1.jpg" alt="">
+        <div id="t4">
+          <div id="tt3"><b>Walter White</b></div>
+          <div id="tt4">Chief Executive Officer</div>
+          <div id="tt5">Explicabo voluptatem molliia et repellat quidolorum quasi</div>
+          <div id="t5">
+            <div id="tt6"><a id="c4" href="#navbar"><i class="fa-solid fa-xmark"></i></a></div>
+            <div id="tt6"><a id="c4" href="#navbar"><i class="fa-brands fa-facebook"></i></a></div>
+            <div id="tt6"><a id="c4" href="#navbar"><i class="fa-brands fa-instagram"></i></a></div>
+            <div id="tt6"><a id="c4" href="#navbar"><i class="fa-brands fa-linkedin"></i></a></div>
+          </div>
+        </div>
+      </div>
+      <div id="tt1">
+        <img id="tt2" src="https://bootstrapmade.com/content/demo/Arsha/assets/img/team/team-2.jpg" alt="">
+        <div id="t4">
+          <div id="tt3"><b>Sarah Jhonson</b></div>
+          <div id="tt4">Product Manager</div>
+          <div id="tt5">Aut maiores voluptates amet et quis praesentium qui senda para</div>
+          <div id="t5">
+            <div id="tt6"><a id="c4" href="#navbar"><i class="fa-solid fa-xmark"></i></a></div>
+            <div id="tt6"><a id="c4" href="#navbar"><i class="fa-brands fa-facebook"></i></a></div>
+            <div id="tt6"><a id="c4" href="#navbar"><i class="fa-brands fa-instagram"></i></a></div>
+            <div id="tt6"><a id="c4" href="#navbar"><i class="fa-brands fa-linkedin"></i></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="t3">
+      <div id="tt1">
+        <img id="tt2" src="https://bootstrapmade.com/content/demo/Arsha/assets/img/team/team-3.jpg" alt="">
+        <div id="t4">
+          <div id="tt3"><b>William Anderson</b></div>
+          <div id="tt4">CTO</div>
+          <div id="tt5">Quisquam facilis cum velit laborum corripti fuga rerum quia</div>
+          <div id="t5">
+            <div id="tt6"><a id="c4" href="#navbar"><i class="fa-solid fa-xmark"></i></a></div>
+            <div id="tt6"><a id="c4" href="#navbar"><i class="fa-brands fa-facebook"></i></a></div>
+            <div id="tt6"><a id="c4" href="#navbar"><i class="fa-brands fa-instagram"></i></a></div>
+            <div id="tt6"><a id="c4" href="#navbar"><i class="fa-brands fa-linkedin"></i></a></div>
+          </div>
+        </div>
+      </div>
+      <div id="tt1">
+        <img id="tt2" src="https://bootstrapmade.com/content/demo/Arsha/assets/img/team/team-4.jpg" alt="">
+        <div id="t4">
+          <div id="tt3"><b>Amanda Jepson</b></div>
+          <div id="tt4">Accountant</div>
+          <div id="tt5">Dolorum tempora officiis odit laborym officiis et et accusamus</div>
+          <div id="t5">
+            <div id="tt6"><a id="c4" href="#navbar"><i class="fa-solid fa-xmark"></i></a></div>
+            <div id="tt6"><a id="c4" href="#navbar"><i class="fa-brands fa-facebook"></i></a></div>
+            <div id="tt6"><a id="c4" href="#navbar"><i class="fa-brands fa-instagram"></i></a></div>
+            <div id="tt6"><a id="c4" href="#navbar"><i class="fa-brands fa-linkedin"></i></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="pricing">
+    <div id="p1"><b>PRICING</b></div>
+    <div id="p2">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</div>
+    <div id="p">
+      <div id="pp1">
+        <div id="p3">Free Plan</div>
+        <div id="pp">
+          <div id="p4">$0 </div>
+          <div id="p11">/ month</div>
+        </div>
+        <div id="p5">
+          <div id="p12"><i class="fa-solid fa-check"></i></div>
+          <div id="111">Quam adipiscing vitae proin</div>
+        </div>
+        <div id="p5">
+          <div class="" id="p12"><i class="fa-solid fa-check"></i></div>
+          <div id="111">Nec feugiat nisl pretium</div>
+        </div>
+        <div id="p5">
+          <div class="" id="p12"><i class="fa-solid fa-check"></i></div>
+          <div id="111">Nulla at volutpat diam uteera</div>
+        </div>
+        <div id="p5">
+          <div class="" id="p12"><i class="fa-solid fa-xmark"></i></div>
+          <div id="111"><del>Pharetra massa massa ultricies</del></div>
+        </div>
+        <div id="p5">
+          <div class="" id="p12"><i class="fa-solid fa-xmark"></i></div>
+          <div id="111"><del>Massa ultricies mi quis hendrerit</del></div>
+        </div>
+        <button type="button" id="p6">Buy Now</button>
+      </div>
+      <div id="pp1">
+        <div id="p3">Business Plan</div>
+        <div id="pp">
+          <div id="p4">$29 </div>
+          <div id="p11">/ month</div>
+        </div>
+        <div id="p5">
+          <div class="" id="p12"><i class="fa-solid fa-check"></i></div>
+          <div id="111">Quam adipiscing vitae proin</div>
+        </div>
+        <div id="p5">
+          <div class="" id="p12"><i class="fa-solid fa-check"></i></div>
+          <div id="111">Nec feugiat nisl pretium</div>
+        </div>
+        <div id="p5">
+          <div class="" id="p12"><i class="fa-solid fa-check"></i></div>
+          <div id="111">Nulla at volutpat diam uteera</div>
+        </div>
+        <div id="p5">
+          <div class="" id="p12"><i class="fa-solid fa-check"></i></div>
+          <div id="111">Pharetra massa massa ultricies</div>
+        </div>
+        <div id="p5">
+          <div class="" id="p12"><i class="fa-solid fa-check"></i></div>
+          <div id="111">Massa ultricies mi quis hendrerit</div>
+        </div>
+        <button type="button" id="p7">Buy Now</button>
+      </div>
+      <div id="pp1">
+        <div id="p3">Developer Plan</div>
+        <div id="pp">
+          <div id="p4">$49 </div>
+          <div id="p11">/ month</div>
+        </div>
+        <div id="p5">
+          <div class="" id="p12"><i class="fa-solid fa-check"></i></div>
+          <div id="111">Quam adipiscing vitae proin</div>
+        </div>
+        <div id="p5">
+          <div class="" id="p12"><i class="fa-solid fa-check"></i></div>
+          <div id="111">Nec feugiat nisl pretium</div>
+        </div>
+        <div id="p5">
+          <div class="" id="p12"><i class="fa-solid fa-check"></i></div>
+          <div id="111">Nulla at volutpat diam uteera</div>
+        </div>
+        <div id="p5">
+          <div class="" id="p12"><i class="fa-solid fa-check"></i></div>
+          <div id="111">Pharetra massa massa ultricies</div>
+        </div>
+        <div id="p5">
+          <div class="" id="p12"><i class="fa-solid fa-check"></i></div>
+          <div id="111">Massa ultricies mi quis hendrerit</div>
+        </div>
+        <button type="button" id="p6">Buy Now</button>
+      </div>
+    </div>
+  </div>
+  <div class="testimonials">
+    <h2>TESTIMONIALS</h2>
+    <P>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</P>
+    <div id="carouselExampleAutoplaying" class="carousel slide text-center" data-bs-ride="carousel" data-interval="2000">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="..">
+          <div id="im-head">Saul Goodman</div>
+          <div id="im-head1">Ceo & Founder</div>
+          <img
+            src="data:image/png;base64,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">
+          <div id="im-text">
+            <div id="cama">"</div>Proin iaculis purus consequat sem cure digni ssim donec porttitor entum suscipit
+            rhoncus.
+            Accusantium quam,ultricies eget id,aliquam eget nibh et.Maecen aliquam,risus at semper.<div id="cama">,,
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./testimonials-2.jpg">
+          <div id="im-head">Sara Wilsson</div>
+          <div id="im-head1">Designer</div>
+          <img
+            src="data:image/png;base64,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">
+          <div id="im-text">
+            <div id="cama">"</div>
+            Export tempor illum tamen malis malis eram quae irure quem cillum quid cillum eram mails quorum velit fore
+            eram velit sunt aliqua noster fugiat irure amet legam anim culpa.<div id="cama">,,</div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./testimonials-4.jpg">
+          <div id="im-head">Saul Goodman</div>
+          <div id="im-head1">Ceo & Founder</div>
+          <img
+            src="data:image/png;base64,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">
+          <div id="im-text">
+            <div id="cama">"</div>Proin iaculis purus consequat sem cure digni ssim donec porttitor entum suscipit
+            rhoncus.
+            Accusantium quam,ultricies eget id,aliquam eget nibh et.Maecen aliquam,risus at semper.<div id="cama">,,
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./testimonials-5.jpg">
+          <div id="im-head">Saul Goodman</div>
+          <div id="im-head1">Ceo & Founder</div>
+          <img
+            src="data:image/png;base64,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">
+          <div id="im-text">
+            <div id="cama">"</div>Proin iaculis purus consequat sem cure digni ssim donec porttitor entum suscipit
+            rhoncus.
+            Accusantium quam,ultricies eget id,aliquam eget nibh et.Maecen aliquam,risus at semper.<div id="cama">,,
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  <div id="ask">
+    <div id="a1">FREQUENTLY ASKED QUESTIONS</div>
+    <div id="a2">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+      consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in
+      iste officiis commodi quidem hic quas.</div>
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseOne">
+            01 Non consectetur a erat nam at lectus urna duis?
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+          <div class="accordion-body">
+            Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida.
+            Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseTwo">
+            02 Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec
+            ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper
+            dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseThree">
+            03 Dolor sit amet consectetur adipiscing elit pellentesque?
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum
+            integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt.
+            Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseThree">
+            04 Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec
+            ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper
+            dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseThree">
+            05 Tempus quam pellentesque nec nam aliquam sem et tortor consequat?
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel
+            risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis
+            blandit turpis cursus in
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="contac">
+    <div id="c1"><b>CONTACT</b></div>
+    <div id="c2">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</div>
+    <div id="c3">
+      <div id="cc1">
+        <div id="c4">
+          <div id="c5"><i class="fa-solid fa-location-dot"></i></div>
+          <div id="c6">
+            <div id="c7">Address</div>
+            <div id="c8">A108 Adam Street, New York, NY 535022</div>
+          </div>
+        </div>
+        <div id="c4">
+          <div id="c5"><i class="fa-solid fa-phone-volume"></i></div>
+          <div id="c6">
+            <div id="c7">Call Us</div>
+            <div id="c8">+1 5589 55488 55</div>
+          </div>
+        </div>
+        <div id="c4">
+          <div id="c5"><i class="fa-solid fa-envelope"></i></div>
+          <div id="c6">
+            <div id="c7">Email Us</div>
+            <div id="c8">info@example.com</div>
+          </div>
+        </div>
+        <img id="c9"src="data:image/jpeg;base64,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" alt="">
+      </div>
+      <div id="cc2">
+        <div id="cc3">
+          <div id="field">
+            <label for="">Your name</label>
+            <input id="name1" type="text" placeholder=" ">
+          </div>
+          <div id="field">
+            <label for="">Your Email</label>
+            <input id="name1" type="text" placeholder=" ">
+          </div>
+        </div>
+        <div id="field">
+          <label for="">Subject</label>
+          <input id="name2" type="text" placeholder=" ">
+        </div>
+        <div id="field">
+          <label for="">Message</label>
+          <input id="name3" type="text-area" placeholder=" ">
+        </div>
+        <button type="button" id="cc6">Send Massega</button>
+      </div>
+    </div>
+  </div>
+  <div id="join">
+    <div id="j1"><b>Join Our Newsletter</b></div>
+    <div id="j2">Subscribe to our newsletter and receive the latest news about our products and services!</div>
+    <div id="j3">
+      <input id="jj1" type="text" placeholder=" ">
+      <button type="button" id="jj2">Subscribe</button>
+    </div>
+  </div>
+  <div id="arsha">
+    <div id="r1">
+      <div id="r2"><b>ARSHA</b></div>
+      <div id="r3">A108 Adam Street</div>
+      <div id="r4">New York, NY 535022</div>
+      <div id="r5"><b>Phone:</b> +1 5589 55488 55</div>
+      <div id="r6"><b>Email:</b> info@example.com</div>
+    </div>
+    <div id="rr1">
+      <div id="rr2"><b>Useful Links</b></div>
+      <div type="button" id="rr3"><a id="c4" href="#navbar">>Home</a></div>
+      <div type="button" id="rr3"><a id="c4" href="#navbar">>About us</a></div>
+      <div type="button" id="rr3"><a id="c4" href="#navbar">>Services</a></div>
+      <div type="button" id="rr3"><a id="c4" href="#navbar">>Terms of service</a></div> 
+    </div>
+    <div id="rr1">
+      <div id="rr2"><b>Our Services</b></div>
+      <div type="button" id="rr3"><a id="c4" href="#navbar">>Web Design</a></div>
+      <div type="button" id="rr3"><a id="c4" href="#navbar">>Web Development</a></div>
+      <div type="button" id="rr3"><a id="c4" href="#navbar">>Product Management</a></div>
+      <div type="button" id="rr3"><a id="c4" href="#navbar">>Marketing</a></div>
+    </div>
+    <div id="r7">
+      <div id="r8"><b>Follow Us</b></div>
+      <div id="r9">Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</div>
+      <div id="r10">
+        <div id="rr6"><a id="c4" href="#navbar"><i class="fa-solid fa-xmark"></i></a></div>
+        <div id="rr6"><a id="c4" href="#navbar"><i class="fa-brands fa-facebook"></i></a></div>
+        <div id="rr6"><a id="c4" href="#navbar"><i class="fa-brands fa-instagram"></i></a></div>
+        <div id="rr6"><a id="c4" href="#navbar"><i class="fa-brands fa-linkedin"></i></a></div>
+      </div>
+    </div>
+  </div>
+  <div id="last">
+    <div id="l1">© Copyright <b>Arsha</b> All Rights Reserved</div>
+    <div id="l1">Designed by BootstrapMade</div>
+  </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.5.2/jquery-migrate.min.js"
+  integrity="sha512-BzvgYEoHXuphX+g7B/laemJGYFdrq4fTKEo+B3PurSxstMZtwu28FHkPKXu6dSBCzbUWqz/rMv755nUwhjQypw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+  integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./bootstrap.js"></script>
+
+</html>
